@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Creo</string>
+    <string name="package_name">io.trigger.forgeed17bd7cb61311e1a00b12313d1adcbe</string>
+    <string name="payments_publicKey">PAYMENTS_PUBLIC_KEY_HERE</string>
+</resources>
