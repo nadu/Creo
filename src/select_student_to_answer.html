@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<style type="text/css">
+		.container{
+			position: relative;
+			border:1px solid #999;
+		}
+		.main-section{
+			width:640px;
+			height:480px;
+			position:absolute;
+			top:45%;
+			left:50%;
+			margin:-240px 0 0 -320px;
+			text-align: center;
+			border: none;
+		}
+		.main-section h3 {
+			padding-bottom: 20px;
+			font-weight:bold;
+		}
+		.right-icons{
+			width:100px;
+		}
+
+		.selected-student{
+			float:left;
+			width:100px;
+			height:80px;
+			margin-top:-10px;
+			position: relative;
+			margin-bottom:15px;
+		}
+		.selected-student span{
+			text-align:center;
+			font-size:1.2em;
+			word-wrap: break-word;
+			display: block;
+			top:70px;
+			position: absolute;
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+	<div class='container'>
+		<div class='right-icons'>
+			<img src='img/users.png' class='home'/>
+			<a href='index.html'>
+				<img src='img/home.png' class='home'/>
+			</a>
+			<img src='img/help.png' class='settings'/>
+		</div>
+		<div class='main-section'>
+			<h3> Select the student to answer </h3>
+		</div>
+	</div>
+	
+<script type="text/javascript" src='js/jquery-1.7.1.min.js'></script>
+<script type="text/javascript" src='js/util.js'></script>
+<script type="text/javascript" src='js/select_student_to_answer.js'></script>
+</body>
+</html>

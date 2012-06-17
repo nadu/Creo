@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<style type="text/css">
+		.container{
+			position: relative;
+			border:none;
+		}
+		.main-section{
+			width:100%;
+		}
+		.right-icons{
+			width:100px;
+		}
+		#question-img{
+			width:640px;
+			height:480px;
+			top:50%;
+			left:50%;
+			margin: -240px 0 0-320px;
+			border: 1px solid #999;
+			float: none;
+			position: absolute;
+		}
+		#question-img img{
+			width:640px;
+			height:480px;
+		}
+		.main-section-footer{
+			bottom:0px;
+			position: absolute;
+			height: 15.748031496062992% ;/*100px/635*/;
+			width:100%;
+			
+		}
+		.main-section-footer.show-options{
+			background-color: #DDD;
+			opacity: 0.5;
+			-moz-opacity: 0.5;
+			filter:alpha(opacity=5);
+		}
+		.answer-tag{
+			float:left;
+			margin-left:-10px;
+			margin-top:27px;
+			cursor: pointer;
+		}
+		.btn-container{
+			width:100%;
+			margin:8px auto 0 245px;
+			display: none;
+			position: absolute;
+			bottom:-9px;
+		}
+		.btn-custom{
+			margin-right: 10px;
+			float:left;
+			margin-bottom:15px;
+			background-color: #f11717;
+			background-image: none;
+		}
+		.btn-wrapper{
+			margin-right:100px;
+			width:225px;
+			float:left;
+		}
+		.microphone{
+			float:left;
+			margin-right:60px;
+			margin-top:5px;
+		}
+		.question-text{
+			margin:15px auto;
+			width:78%;
+			font-size:1.8em;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<div class='container'>
+		<div class='right-icons'>
+			<a href='select_student_to_answer.html'>
+				<img src='img/users.png' id='users'/>
+			</a>
+			<a href='index.html'>
+				<img src='img/home.png' class='home'/>
+			</a>
+			<img src='img/help.png' class='settings'/>
+		</div>
+		<div class='main-section'>
+			<h3 class='question-text' id='question-text'>Question text goes here</h3>
+			<div id='question-img'>
+				<img src="">
+			</div>
+			<div class='main-section-footer'>
+				<img src='img/answer_tag.png' class='answer-tag'/>
+    	</div>
+    	<div class='btn-container'>
+    			<div class='btn-wrapper'>
+						<div class='btn-custom ' id='record'>Record</div>
+						<img src="img/microphone.png" class='microphone'>
+					</div>
+					<div class='btn-wrapper'>
+						<div class='btn-custom ' id='repeat-question'>Repeat Question</div>
+					</div>
+					<div class='btn-wrapper'>
+						<div class='btn-custom ' id='play-answer'>Play Answer</div>
+					</div>
+					<div class='btn-wrapper'>
+						<div class='btn-custom ' id='next-question'>Next Question</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+<script type="text/javascript" src='js/jquery-1.7.1.min.js'></script>
+<script type="text/javascript" src='js/story_play_initial_state.js'></script>
+</body>
+</html>

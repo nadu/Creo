@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html>
-	<head><script src='/_forge/all.js'></script>
-	<title>Hello World!</title>
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/jquery.mobile-1.1.0.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+<head><script src='/_forge/all.js'></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
 </head>
 <body>
+    <div class='container'>
+    	<div class='side-section-container'>
+    		<h3>All Stories</h3>
+    		<div class='side-section-content j-play-story'>
+    			<img src='mock_images/policeman.jpg'/>
+    			<span> Policeman  </span>
+    		</div>
+        <div class='side-section-content j-play-story'>
+          <img src='mock_images/idli.jpg'/>
+          <span> Different Foods </span>
+        </div>
+        <div class='side-section-content j-play-story'>
+          <img src='mock_images/playground.jpg'/>
+          <span> Playground  </span>
+        </div>
+    		<div class='side-section-content j-play-story'>
+    		  <img src='mock_images/indian_restaurant.jpg'/>
+    			<span> Eating in a restaurant </span>
+    		</div>
+    		<div class='side-section-content j-play-story'>
+    			<img src='mock_images/mixed_vegetables.jpg'/>
+    			<span> My Favorite Vegetables </span>
+    		</div>
+    		
+    		<div class='side-section-footer'>
+                <img src="img/user.png">
+                <img src="img/settings.png">
+    		</div>
+    		
+    	</div>
+    	<div class='main-section'>
+    		<div class='main-content'>
+    			<div class='btn-custom' id='create-new-story'>Create a New Story</div>
+    			<div class='search-wrapper'>
+		    		<input type="text" id='search-input' class='left' placeholder="Search Stories">
+		    		<div class='btn-custom right' id='search-btn'>Go</div>
+	      		</div>
+	      		<div class='clear'></div>
+	      		<div class='recent-stories'>
+	      			<h3>Recent Stories</h3>
+	      			<div class='recent-story'>
+	      				<h4>Different Foods</h4>
+                        <div class='story-images-clubbed'>
+                            <img src='mock_images/idli.jpg' class='thumbnail-1 j-play-story'/>
+                            <img src='img/img_thumbnail.png' class='thumbnail-2'/>
+                            <img src='img/img_thumbnail.png' class='thumbnail-3'/>
+                            <span> narayanan ramakrishnan</span>
+                        </div>
+                        <div class='edit-play-wrapper'>
+                            <div class='btn-custom ' id='play-story'>Play Story</div>
+                             <div class='btn-custom ' id='edit-story'>Edit Story</div>
+                        </div>
+	      			</div>
+                    <div class='recent-story'>
+                        <h4>Playground </h4>
+                        <div class='story-images-clubbed'>
+                            <img src='mock_images/playground.jpg' class='thumbnail-1 j-play-story'/>
+                            <img src='img/img_thumbnail.png' class='thumbnail-2'/>
+                            <img src='img/img_thumbnail.png' class='thumbnail-3'/>
+                            <span> narayanan ramakrishnan</span>
+                        </div>
+                         <div class='edit-play-wrapper'>
+                            <div class='btn-custom ' id='play-story'>Play Story</div>
+                             <div class='btn-custom ' id='edit-story'>Edit Story</div>
+                        </div>
+                    </div>
+	      		</div>
+	      		<div class='favorite-stories'>
+	      			<h3>Favorite Stories</h3> 
+                    <img src='img/star.png'/>
+	      			<div class='favorite-story'>
+	      			    <h4>A Field Trip</h4>
+                        
+                        <div class='story-images-clubbed'>
+                            <img src='mock_images/schoolbus.jpg' class='thumbnail-1 j-play-story'/>
+                            <img src='img/img_thumbnail.png' class='thumbnail-2'/>
+                            <img src='img/img_thumbnail.png' class='thumbnail-3'/>
+                            <span> narayanan ramakrishnan</span>
+                        </div>
+                        <div class='edit-play-wrapper'>
+                            <div class='btn-custom ' id='play-story'>Play Story</div>
+                             <div class='btn-custom ' id='edit-story'>Edit Story</div>
+                        </div>
+	      			</div>
+                    <div class='favorite-story'>
+                        <h4>My Favorite Vegetables</h4>
+                        <div class='story-images-clubbed'>
+                        <img src='mock_images/mixed_vegetables.jpg' class='thumbnail-1 j-play-story'/>
+                            <img src='img/img_thumbnail.png' class='thumbnail-2'/>
+                            <img src='img/img_thumbnail.png' class='thumbnail-3'/>
+                            <span> narayanan ramakrishnan</span>
+                        </div>
+                          <div class='edit-play-wrapper'>
+                            <div class='btn-custom ' id='play-story'>Play Story</div>
+                             <div class='btn-custom ' id='edit-story'>Edit Story</div>
+                        </div>
+                    </div>
+	      		</div>
+    		</div>
+    	</div>
+    </div>
 
-<div data-role="page">
-
-	<div data-role="header">
-		<h1>Hello World!</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">
-		<p>Congratulations on installing Forge!</p>
-		<p>This is an example project built with simple HTML, CSS and JavaScript</p>
-		
-		<h3>Getting started</h3>
-
-		<p>If you're here, you've proabably already seen <a href="http://current-docs.trigger.io/">the Forge documentation</a>.</p>
-		<p>Keep an eye on our <a href="https://trigger.io/cross-platform-application-development-blog/">blog</a> which has regular developer tips and news.</p>
-
-		<h3>Next steps</h3>
-
-		<p>You could try going through <a href="http://current-docs.trigger.io/tutorials/weather/index.html">a tutorial</a>, or looking at <a href="http://current-docs.trigger.io/modules/index.html">available modules</a>.</p>
-		<p>If you have any questions, you can use <a href="http://stackoverflow.com/questions/tagged/trigger.io">StackOverflow</a> or <a href="mailto:support@trigger.io">send us an email</a>.</p>
-
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Get in touch:
-			<a href="mailto:support@trigger.io">support@trigger.io</a>
-		</h4>
-	</div><!-- /footer -->
-
-</div><!-- /page -->
-
+<script type="text/javascript" src='js/jquery-1.7.1.min.js'></script>
+<script type="text/javascript" src='js/index.js'></script>
 </body>
 </html>

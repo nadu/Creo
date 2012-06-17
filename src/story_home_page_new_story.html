@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<style type="text/css">
+	.main-section{
+		width:600px;
+		height:400px;
+		position:absolute;
+		top:100px;
+		left:180px;
+		text-align: center;
+		border: 1px solid #999;
+	}
+	.container{
+		position: relative;
+
+	}
+	#story-title{
+		text-align:center;
+		font-size:1.4em;
+		margin: 40px auto 0 auto;
+		width: 50%;
+		font-weight:bold;
+	}
+	.main-section h4{
+		font-weight:normal;
+		text-align:center;
+		margin:30px auto;
+	}
+	.main-section img{
+		padding: 5px;
+		width:100px;
+		height:75px;
+		float:left;
+		cursor: pointer;
+	}
+	.img-wrapper{
+		padding:0 20px;
+	}
+	</style>
+</head>
+<body>
+	<div class='container'>
+		<div id='story-title'> Untitled Story</div>
+		<div class='main-section'>
+			<h4>Start your Story by choosing one of the images</h4>
+			<div class='img-wrapper'>
+				<img src='mock_images/indian_restaurant.jpg' />
+				<img src='mock_images/dosa.jpg' />
+				<img src='mock_images/idli.jpg' />
+				<img src='mock_images/poori.jpg' />
+				<img src='mock_images/panipuri.jpg' />
+				<img src='mock_images/potatoes.jpg' />
+				<img src='mock_images/mixed_vegetables.jpg' />
+				<img src='mock_images/bhindi.jpg' />
+				<img src='mock_images/farmer.jpg' />
+				<img src='mock_images/milkman.png' />
+				<img src='mock_images/carpenter.jpg' />
+				<img src='mock_images/policeman.jpg' />
+				<img src='mock_images/vegetable_vendor.jpg' />
+				<img src='mock_images/playground.jpg' />
+				<img src='mock_images/schoolbus.jpg' />
+			</div>
+		</div>
+
+	</div>
+<script type="text/javascript" src='js/jquery-1.7.1.min.js'></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// set story name from local storage
+		var so = localStorage.getItem('storyObject') || JSON.stringify({});
+		so = JSON.parse(so);
+		$('#story-title').html(so.storyName || 'Story Name');
+		$('.img-wrapper').on("click", "img", function(event){
+			var imgSrc = event.target.getAttribute('src');
+			var tileObject = {imgSrc:'', question:'', answer:'', prompt:'', comments:'', notes:'Notes: ', tileId:''};
+			console.log(so);
+			if(!$.isEmptyObject(so)){
+				tileObject.imgSrc = imgSrc;
+				tileObject.tileId = so.tiles.length;
+				so.currentTileId = so.tiles.length;
+				so.tiles.push(tileObject);
+				localStorage.setItem('storyObject', JSON.stringify(so));
+			}else{
+				so = {tiles:[], currentTileId:0, storyName:'Story Name', deletedTiles:[]};
+				tileObject.imgSrc = imgSrc;
+				tileObject.tileId = 0;
+				so.tiles.push(tileObject);
+				console.log(so);
+				localStorage.setItem('storyObject', JSON.stringify(so));
+			}
+			window.location = 'story_tile.html';
+		});
+})
+</script>
+</body>
+</html>

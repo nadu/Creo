@@ -1,0 +1,96 @@
+h2{
+    margin-top:10px;
+    font-family:Georgia;
+}
+h4{
+    padding-bottom:5px;
+}
+form{
+    margin-left:60px;
+}
+/* TODO remove style from container fluid later */
+.container-fluid{
+    width:980px;
+    padding-left:0px;/*don't remove this rule*/
+}
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+
+#main-column{
+    background-color:#eee; 
+    padding-left:10px;
+    margin-left:0px;
+    padding-top:10px;
+    padding-right:10px;
+}
+
+.left-column{
+    background-color:#eee; 
+    border:1px solid #aaa;
+    text-align:center;
+}
+
+.btn-custom {
+    background-color: hsl(101, 63%, 40%) !important;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#5ec72d), to(#4ea625));
+    background-image: -moz-linear-gradient(top, #5ec72d, #4ea625);
+    background-image: -ms-linear-gradient(top, #5ec72d, #4ea625);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5ec72d), color-stop(100%, #4ea625));
+    background-image: -webkit-linear-gradient(top, #5ec72d, #4ea625);
+    background-image: -o-linear-gradient(top, #5ec72d, #4ea625);
+    background-image: linear-gradient(#5ec72d, #4ea625);
+    border-color: #4ea625 #4ea625 hsl(101, 63%, 38%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.13);
+    -webkit-font-smoothing: antialiased;
+    -webkit-border-radius: 3px;
+    width:150px;
+    height:30px;
+    padding-top:10px;
+    text-align:center;
+}
+
+#create-new-story{
+    float:left;
+}
+
+.search-wrapper{
+    float:right;
+}
+#search-btn{
+    width:50px;
+    height:22px;
+    margin-left:10px;
+    padding-top:5px;
+}
+.recent-story{
+    float:left;
+    margin-bottom:20px;
+}
+.recent-story > img{
+    float:left;
+    margin-left:20px;
+}
+
+.choose-image{
+    margin:0 auto;
+    width:20%;
+    border: 5px dotted #999;
+    overflow: auto;
+    padding: 60px 90px 60px 90px;
+}
+.choose-image > img{
+    float:left;
+    margin-left:20px;
+
+}
+
