@@ -1,6 +1,6 @@
-development/*
-release/*
-avaz-project/*
-src/img/*
+development/
+release/
+avaz-project/
+src/img/
 src/mock_images/
 src/mock_images/students/

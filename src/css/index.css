@@ -12,8 +12,9 @@
     clear:both;
 }
 .container{
-	width:960px;
-	height:635px;
+	width:100%;
+	/*max-width:1000px;*/
+	height:725px;
 	border:1px solid #ccc;
 	float: left;
 }
@@ -66,7 +67,7 @@
 
 .main-section{
 	width: 72.91666666666667%; /*700px/960*/;
-	border:1px solid #ccc;
+	/*border:1px solid #ccc;*/
 	float: left;
 	height:100%;
 	overflow: hidden;
