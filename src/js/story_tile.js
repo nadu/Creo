@@ -128,7 +128,8 @@ Creo.StoryTile = (function(){
 		$('.toolbar-content').on('click', '.add-image', function(){
 			//autoSave();
 			// Select an image and return with a maximum width and height of 300px
-			forge.file.getImage({width: 300, height: 300}, function (file) {
+			forge.logging.info("Hope this get logged");
+			forge.file.getImage({width: 300, height: 300, saveLocation:'file'}, function (file) {
 				getImage(file);	
 			});
 		});
@@ -181,9 +182,14 @@ Creo.StoryTile = (function(){
 
 		// clear local storage
 		$('.toolbar-content').on('click', '#off', function(){
-			//$('#canvas-area').append("<div style='width:50px; height:20px; border:1px solid #333; background-image:url(img/comments.png) no-repeat'></div>");
 			localStorage.clear();
-			readyPage();
+			window.location = 'story_tile.html';
+		});
+
+		// play the story
+		$('.toolbar-content').on('click', '#play', function(){
+			autoSave();
+			window.location = 'story_home_page.html';
 		});
 	};	
 

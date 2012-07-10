@@ -1,0 +1,3 @@
+//scratchpad
+forge package ios --ios.profile.provisioning_profile iOS_Team_Provisioning_Profile_.mobileprovision
+.template/lib/ios-sim-xc4.3 launch development/ios/simulator-ios.app --family ipad 	

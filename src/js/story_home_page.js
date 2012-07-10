@@ -23,7 +23,7 @@ $(document).ready(function(){
   function setupStoryDetails(){
     // thumbnail
     if(!$.isEmptyObject(so)){
-      $('.big-thumbnail').attr('src', so.tiles[0].imgSrc);
+      //$('.big-thumbnail').attr('src', so.tiles[0].imgSrc);
       // story title
       if(so.storyName != 'Story Name')
         $('#story-title').val(so.storyName);
@@ -80,6 +80,11 @@ $(document).ready(function(){
       window.location = 'story_play_initial_state.html';
     }, 
     500);
+  });
+
+  // story tiles button
+  $('#story-tiles').on('click', function(){
+    window.location = 'story_tile.html'
   });
 
   // clear local storage

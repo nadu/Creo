@@ -1,17 +1,17 @@
 $(document).ready(function(){
-	$('.main-content').on("click", "#create-new-story", function(event){
+	$("#create-new-story").on("click", function(event){
 		window.location = 'story_tile.html';
 	});
 
-	$('.main-content').on("click", "#edit-story", function(event){
+	$('#edit-story').on("click", function(event){
 		window.location = 'story_tile.html';
 	});
 
-	$('.main-content').on("click", "#play-story", function(event){
+	$("#play-story").on("click", function(event){
 		window.location = 'story_home_page.html';
 	});
 
-	$('.container').on("click", ".j-play-story", function(event){
+	$('.j-play-story').on("click", function(event){
 		window.location = 'story_home_page.html';
 	});
 

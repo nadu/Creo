@@ -77,7 +77,7 @@ function filter(arr, condition){
 						var val = document.createElement('div');
 						$(val).html(i[key]);
 						$(val).addClass('autocomplete-element');
-						$(val).data('valueObj',JSON.stringify(i))
+						$(val).data('valueObj',JSON.stringify(i));
 						frag.appendChild(val);
 					});
 					autocompleteEl.append(frag);

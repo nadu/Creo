@@ -13,7 +13,7 @@
 }
 .container{
 	width:100%;
-	/*max-width:1000px;*/
+	/*width:1000px;*/
 	height:725px;
 	border:1px solid #ccc;
 	float: left;
